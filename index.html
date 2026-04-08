@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMBELE FRANCISCO GRACIA - Portfolio</title>
+    <meta name="description" content="Portfolio de DOMBELE FRANCISCO Gracia, Concepteur Multimédia.">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<canvas id="bg-particles"></canvas>
+<body>
+
+
+<!-- Bouton -->
+<button id="scrollTopBtn">⬆</button>
+
+<style>
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 40px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: auto;
+
+  background: #111;
+  color: white;
+
+  /* Glow */
+  box-shadow: 0 0 10px rgb(255, 0, 179), 0 0 20px rgb(194, 255, 10);
+
+  display: none;
+  transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  box-shadow: 0 0 20px #00f, 0 0 40px #00f;
+  transform: scale(1.2);
+}
+</style>
+
+<script>
+// afficher le bouton quand on scroll
+window.onscroll = function () {
+  let btn = document.getElementById("scrollTopBtn");
+
+  if (document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// remonter en haut
+document.getElementById("scrollTopBtn").onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
+</script>
+
+
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#accueil" class="logo">
+            <img src="logo.png" alt="">
+        </a>
+        <div class="nav-links">
+            <a href="#accueil">Accueil</a>
+            <a href="#projets">Projets</a>
+            <a href="#contacts">Contacts</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil">
+        <div class="hero-bg-blob fade-up"></div>
+        <div class="hero-content fade-up delay-1">
+            <h1 class="hero-title">DOMBELE FRANCISCO Gracia</h1>
+            <h2 class="hero-subtitle">Concepteur Multimedia</h2>
+        </div>
+    </section>
+
+   
+
+    
+    <!-- Projects Section -->
+    <section id="projets">
+        <div class="section-header fade-up">
+            <h2 class="section-title">design graphique</h2>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <a href="projet-detail.html" class="project-card fade-up">
+                <div class="project-image-container">
+                    <img src="affiche beebadoobee.jpg" alt="Projet Web App">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Cover beebadoobee</h3>
+                    <span class="project-category">Voir les details</span>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="Design photoshop.html" class="project-card fade-up delay-1">
+                <div class="project-image-container">
+                    <img src="mosaique 1.jpg" alt="Projet Illustration 3D">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Design de photo sur photoshop</h3>
+                    <span class="project-category">Voir les details</span>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="last dance.html" class="project-card fade-up">
+                <div class="project-image-container">
+                    <img src="estompage.jpg" alt="Projet App Mobile">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Affiche de film fictive</h3>
+                    <span class="project-category">Voir les details</span>
+                </div>
+            </a>
+
+
+
+
+
+
+             <!-- Project 3 -->
+            <a href="marsaimartins.html" class="project-card fade-up">
+                <div class="project-image-container">
+                    <img src="Marsai Martins 2.jpg" alt="Projet App Mobile">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Affiche Marsai Martins</h3>
+                    <span class="project-category">Voir les details</span>
+                </div>
+            </a>
+
+
+
+  <!-- Project 3 -->
+            <a href="alternance.html" class="project-card fade-up">
+                <div class="project-image-container">
+                    <img src="Affiche InDesign alternance 2.jpg" alt="Projet App Mobile">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">campagne fictive sur l'alternance</h3>
+                    <span class="project-category">Voir les details</span>
+                </div>
+            </a>
+
+
+
+            <!-- Project 4 -->
+            <a href="molines.html" class="project-card fade-up delay-1">
+                <div class="project-image-container">
+                    <img src="molines.jpg" alt="Projet Typographie">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">affiche graphique</h3>
+                    <span class="project-category">Voir les details</span>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+
+
+
+
+             <!-- Projects Section -->
+    <section id="projets">
+        <div class="section-header fade-up">
+            <h2 class="section-title">Design sportif</h2>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <a href="psg.html" class="project-card fade-up">
+                <div class="project-image-container">
+                    <img src="affiche psg (1).jpg" alt="Projet Web App">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Affiche paris saint germain</h3>
+                    <span class="project-category">Voir les details</span>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="can.html" class="project-card fade-up delay-1">
+                <div class="project-image-container">
+                    <img src="can 2 sav duplicata.png" alt="Projet Illustration 3D">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Affiche Can de Savigny le temple</h3>
+                    <span class="project-category">Voir les details</span>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="pedri.html" class="project-card fade-up">
+                <div class="project-image-container">
+                    <img src="Pédri montage.png" alt="Projet App Mobile">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">affiche pedri</h3>
+                    <span class="project-category">Voir les details</span>
+                </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="gvardiol.html" class="project-card fade-up delay-1">
+                <div class="project-image-container">
+                    <img src="Gvardiol.jpg" alt="Projet Typographie">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">affiche gvardiol</h3>
+                    <span class="project-category">Voir les details</span>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contacts">
+        <div class="contact-wrapper fade-up">
+            <h2 class="section-title">Travaillons Ensemble</h2>
+            <p class="contact-text">
+                
+                Mon mail : gracedombele50@gmail.com
+            </p>
+
+ <p class="contact-text">
+                Linkedin : @Graciadombelefrancisco
+            </p>
+
+          <a href="Gracia DOMBELE  cCV.pdf" class="btn-download" download>
+  <span class="icon-download">
+    <svg viewBox="0 0 24 24">
+      <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+    </svg>
+  </span>
+  Télécharger mon CV
+</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 DOMBELE FRANCISCO Gracia. Tous droits réservés.
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
